@@ -1,8 +1,14 @@
-<div class="row">
-  <input type="text" [ngClass]="{'alert-dark':boja === true}" placeholder="ngClass">
-  <button type="button" class="btn btn-success" (click)="pritisni()">ngClass</button>
-  <button type="button" class="btn btn-primary" (click)="prtitisniStil()">ngStyle</button>
-  <input type="text" [ngStyle]="{'background-color': stil === 'ana'? 'green':'red'}" placeholder="ngStyle" >
+<div class="flex-column">
+  <div>
+
+    <button type="button" class="btn btn-success" (click)="pritisni()">ngClass</button>
+    <input type="text" [ngClass]="{'alert-dark':boja === true}" placeholder="ngClass">
+  </div>
+ <div>
+   <button type="button" class="btn btn-primary" (click)="prtitisniStil()">ngStyle</button>
+   <input type="text" [ngStyle]="{'background-color': stil === 'ana'? 'green':'white'}" placeholder="ngStyle" >
+ </div>
+
   {{boja}}
   {{stil}}
 </div>
