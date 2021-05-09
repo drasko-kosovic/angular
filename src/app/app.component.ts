@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  boja = false;
+  stil: string;
+
+  pritisni(): any
+  {
+    this.boja = true;
+  }
+
+  prtitisniStil() {
+    this.stil ='ana';
+  }
 }
