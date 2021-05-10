@@ -1,14 +1,26 @@
-<div class="flex-column">
-  <div>
 
-    <button type="button" class="btn btn-success" (click)="pritisni()">ngClass</button>
-    <input type="text" [ngClass]="{'alert-dark':boja === true}" placeholder="ngClass">
-  </div>
- <div>
-   <button type="button" class="btn btn-primary" (click)="prtitisniStil()">ngStyle</button>
-   <input type="text" [ngStyle]="{'background-color': stil === 'ana'? 'green':'white'}" placeholder="ngStyle" >
- </div>
 
-  {{boja}}
-  {{stil}}
-</div>
+<!--<div class="flex-column">-->
+<!--  <div>-->
+
+<!--    <button type="button" class="btn btn-success" (click)="pritisni()">ngClass</button>-->
+<!--    <input type="text" [ngClass]="{'alert-dark':boja === true}" placeholder="ngClass">-->
+<!--  </div>-->
+<!-- <div>-->
+<!--   <button type="button" class="btn btn-primary" (click)="prtitisniStil()">ngStyle</button>-->
+<!--   <input type="text" [ngStyle]="{'background-color': stil === 'ana'? 'green':'white'}" placeholder="ngStyle" >-->
+<!-- </div>-->
+
+<!--  {{boja}}-->
+<!--  {{stil}}-->
+<!--</div>-->
+
+<mat-drawer-container class="example-container" xmlns="http://www.w3.org/1999/html">
+  <mat-drawer #drawer mode="side" >I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+
+    <button mat-raised-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+    </button>
+  </mat-drawer-content>
+</mat-drawer-container>
